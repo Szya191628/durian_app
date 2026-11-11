@@ -1,0 +1,1 @@
+.info-row { width:100%; display:flex; align-items:center; gap:20rpx; min-height:108rpx; text-align:left; border-bottom:2rpx solid var(--color-border); } .label { font-size:28rpx; } .value { color:var(--color-muted); font-size:26rpx; max-width:55%; overflow-wrap:anywhere; }

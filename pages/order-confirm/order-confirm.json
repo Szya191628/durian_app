@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "确认订单",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 160,
+  "usingComponents": {
+    "app-nav": "/components/app-nav/app-nav",
+    "page-state": "/components/page-state/page-state",
+    "ui-icon": "/components/ui-icon/ui-icon",
+    "app-modal": "/components/app-modal/app-modal"
+  }
+}

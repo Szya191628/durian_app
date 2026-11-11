@@ -1,0 +1,1 @@
+<view class="metric {{dark ? 'metric-dark' : ''}}"><view class="row between"><text class="metric-label">{{label}}</text><ui-icon name="{{icon}}" tone="{{dark ? 'white' : 'green'}}" size="34" /></view><text class="metric-value">{{value}}</text><text class="metric-note" wx:if="{{note}}">{{note}}</text></view>

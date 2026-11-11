@@ -1,0 +1,1 @@
+.address-main { text-align:left;width:100%; } .address-copy { display:block;margin-top:20rpx;color:var(--color-muted);line-height:1.7;overflow-wrap:anywhere; } .address-actions { display:flex;align-items:center;border-top:2rpx solid var(--color-border);margin-top:24rpx;padding-top:8rpx;gap:12rpx; }

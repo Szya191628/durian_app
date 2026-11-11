@@ -1,0 +1,1 @@
+.member-copy { display:block;color:var(--color-muted);line-height:1.8;margin-top:24rpx; } .recharge-option { display:flex;flex-direction:column;gap:16rpx;align-items:center;background:var(--color-surface);border:2rpx solid var(--color-border);border-radius:22rpx;padding:32rpx 20rpx; } .selected { border-color:var(--color-primary);background:var(--color-primary-soft); }

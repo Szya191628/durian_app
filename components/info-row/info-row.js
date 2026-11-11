@@ -1,0 +1,1 @@
+Component({ options: { styleIsolation: "apply-shared", multipleSlots: true }, properties: { label: String, value: String, icon: String, arrow: Boolean }, methods: { tap() { this.triggerEvent('activate') } } })

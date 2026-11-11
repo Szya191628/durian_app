@@ -1,0 +1,17 @@
+{
+  "framework": "native-wechat",
+  "existingFont": "system Chinese font stack",
+  "existingPalette": [
+    "#FFD700",
+    "#2D5016",
+    "#FFF8E7"
+  ],
+  "motion": "native WXSS only",
+  "decision": "Preserve routes and native runtime; consolidate tokens and redesign UI.",
+  "nativeExceptions": [
+    "sRGB for compatible WXSS",
+    "native system fonts for Chinese readability and package size",
+    "native tabbar and capsule geometry",
+    "no browser footer or synthetic phone chrome"
+  ]
+}

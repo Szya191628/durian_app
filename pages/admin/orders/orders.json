@@ -1,0 +1,13 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "订单管理",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 160,
+  "usingComponents": {
+    "app-nav": "/components/app-nav/app-nav",
+    "page-state": "/components/page-state/page-state",
+    "ui-tabs": "/components/ui-tabs/ui-tabs",
+    "order-card": "/components/order-card/order-card",
+    "list-footer": "/components/list-footer/list-footer"
+  }
+}

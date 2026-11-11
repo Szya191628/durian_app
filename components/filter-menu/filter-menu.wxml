@@ -1,0 +1,1 @@
+<picker mode="selector" range="{{options}}" range-key="label" value="{{index}}" bindchange="change"><view class="filter"><text>{{options[index].label || label}}</text><ui-icon name="down" size="28" /></view></picker>

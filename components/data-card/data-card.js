@@ -1,0 +1,1 @@
+Component({ options: { styleIsolation: "apply-shared", multipleSlots: true }, properties: { label: String, value: { type: String, value: '—' }, note: String, icon: { type: String, value: 'leaf' }, dark: Boolean } })

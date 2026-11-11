@@ -1,0 +1,1 @@
+<button class="info-row" bindtap="tap" hover-class="{{arrow ? 'press' : 'none'}}"><ui-icon wx:if="{{icon}}" name="{{icon}}" size="38" /><text class="grow label">{{label}}</text><text class="value">{{value}}</text><ui-icon wx:if="{{arrow}}" name="right" size="30" /></button>

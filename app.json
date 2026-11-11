@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/cart/cart",
+    "pages/mine/mine",
+    "pages/category/category",
+    "pages/detail/detail",
+    "pages/order-confirm/order-confirm",
+    "pages/order-list/order-list",
+    "pages/order-detail/order-detail",
+    "pages/member/member",
+    "pages/address-list/address-list",
+    "pages/address-edit/address-edit",
+    "pages/login/login",
+    "pages/admin/index/index",
+    "pages/admin/products/products",
+    "pages/admin/product-edit/product-edit",
+    "pages/admin/orders/orders",
+    "pages/admin/order-detail/order-detail",
+    "pages/admin/recharge/recharge"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#F7F8F4",
+    "navigationBarTitleText": "榴夏来榴莲生鲜",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F7F8F4",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#657268",
+    "selectedColor": "#254D3E",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "assets/icons/home-muted.png",
+        "selectedIconPath": "assets/icons/home-green.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "assets/icons/bag-muted.png",
+        "selectedIconPath": "assets/icons/bag-green.png",
+        "text": "购物袋"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "assets/icons/user-muted.png",
+        "selectedIconPath": "assets/icons/user-green.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

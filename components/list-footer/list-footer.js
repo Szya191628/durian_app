@@ -1,0 +1,1 @@
+Component({ options: { styleIsolation: "apply-shared", multipleSlots: true }, properties: { loading: Boolean, error: String, hasMore: Boolean, count: Number }, methods: { retry() { this.triggerEvent('retry') } } })

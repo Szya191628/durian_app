@@ -1,0 +1,1 @@
+.pick-row { display:flex;align-items:center;width:100%;padding:22rpx 0;border-bottom:2rpx solid var(--color-border);background:none;text-align:left; } .pick-row:last-child { border-bottom:none; } .pick-body { display:flex;flex-direction:column;gap:6rpx; } .pick-check { color:var(--color-primary);font-size:28rpx; }

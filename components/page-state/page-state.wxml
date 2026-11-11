@@ -1,0 +1,6 @@
+<view wx:if="{{loading}}" class="skeleton" aria-label="正在加载">
+  <view class="skeleton-heading"></view><view class="skeleton-line"></view>
+  <view class="skeleton-row" wx:for="{{rows}}" wx:key="*this"><view class="skeleton-square"></view><view class="grow"><view class="skeleton-line wide"></view><view class="skeleton-line"></view><view class="skeleton-line short"></view></view></view>
+</view>
+<view wx:elif="{{error}}" class="state enter"><ui-icon name="offline" size="96" /><text class="state-title">暂时没能加载</text><text class="state-desc">{{error}}</text><button class="secondary compact" bindtap="retry" hover-class="press">重新加载</button></view>
+<view wx:elif="{{empty}}" class="state enter"><ui-icon name="bag" size="100" /><text class="state-title">{{title}}</text><text class="state-desc">{{description}}</text><button wx:if="{{actionText}}" class="primary compact" bindtap="action" hover-class="press">{{actionText}}</button></view>

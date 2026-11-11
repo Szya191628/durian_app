@@ -1,0 +1,11 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "收货地址",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 160,
+  "usingComponents": {
+    "app-nav": "/components/app-nav/app-nav",
+    "page-state": "/components/page-state/page-state",
+    "list-footer": "/components/list-footer/list-footer"
+  }
+}

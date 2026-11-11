@@ -1,0 +1,8 @@
+<view class="nav-space" style="height:{{top+height}}rpx"></view>
+<view class="nav" style="padding-top:{{top}}rpx">
+  <view class="nav-row" style="height:{{height}}rpx;padding-right:{{right}}rpx">
+    <button wx:if="{{back}}" class="back" bindtap="goBack" hover-class="press" aria-label="返回"><ui-icon name="back" size="40" /></button>
+    <view wx:else class="brand-mark"><ui-icon name="leaf" tone="white" size="38" /></view>
+    <view class="nav-copy"><text class="nav-title">{{title}}</text><text class="nav-subtitle" wx:if="{{subtitle}}">{{subtitle}}</text></view>
+  </view>
+</view>

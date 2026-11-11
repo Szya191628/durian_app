@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "店铺工作台",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 160,
+  "usingComponents": {
+    "app-nav": "/components/app-nav/app-nav",
+    "page-state": "/components/page-state/page-state",
+    "data-card": "/components/data-card/data-card",
+    "info-row": "/components/info-row/info-row"
+  }
+}

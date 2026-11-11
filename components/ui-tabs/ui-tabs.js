@@ -1,0 +1,1 @@
+Component({ options: { styleIsolation: "apply-shared", multipleSlots: true }, properties: { items: Array, value: String }, methods: { change(e) { this.triggerEvent('change', { value: e.currentTarget.dataset.key }) } } })

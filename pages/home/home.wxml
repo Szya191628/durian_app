@@ -1,0 +1,21 @@
+<app-nav title="榴夏来榴莲生鲜" subtitle="DURIAN SELECT" back="{{false}}" />
+<view class="screen home-screen">
+  <search-box readonly placeholder="找一颗，合你心意的榴莲" bindactivate="searchHome" />
+  <view class="hero section">
+    <image class="hero-image" src="/assets/images/durian-editorial.jpg" mode="aspectFill" />
+    <view class="hero-copy"><text class="hero-label">榴莲专门店</text><text class="hero-title">把浓郁，
+留给生活。</text><text class="hero-description">整果 · 果肉</text><button class="hero-cta" bindtap="goCategory" hover-class="press">挑选榴莲 <ui-icon name="right" size="28" /></button></view>
+    <text class="hero-caption">品牌创意配图</text>
+  </view>
+  <view class="quick-facts"><view><ui-icon name="leaf" size="30" /><text>按品种挑选</text></view><view><ui-icon name="box" size="30" /><text>整果与果肉</text></view><view><ui-icon name="bag" size="30" /><text>一键加购</text></view></view>
+  <view class="selection-heading section"><view><text class="subheading">今日精选</text><text class="caption block">选好品种，把美味带回家</text></view><view class="selection-count"><text class="selection-number">{{loading || error ? '—' : total}}</text><text>款在售</text></view></view>
+
+<page-state loading="{{loading}}" error="{{error}}" empty="{{!items.length}}" title="还没有找到心仪的榴莲" description="试试其他品种，或稍后再来看看。" bindretry="retry" />
+<view wx:if="{{!loading && !error}}" class="grid"><product-card wx:for="{{items}}" wx:key="_id" product="{{item}}" bindopen="openProduct" bindadd="addProduct" /></view>
+<list-footer wx:if="{{!loading && !error}}" loading="{{loadingMore}}" error="{{moreError}}" has-more="{{hasMore}}" count="{{items.length}}" bindretry="onReachBottom" />
+
+  <view wx:if="{{categories.length > 1}}" class="section-head section category-heading"><view><text class="subheading">从喜欢的品种开始</text><text class="caption block">找到你的甜、糯与浓郁</text></view><button class="text-button" bindtap="goCategory">全部 <ui-icon name="right" size="28" /></button></view>
+  <scroll-view wx:if="{{categories.length > 1}}" class="category-strip" scroll-x show-scrollbar="{{false}}"><view class="category-inner"><button wx:for="{{categories}}" wx:if="{{item.key !== 'all'}}" wx:key="key" class="category-tile" data-key="{{item.key}}" bindtap="goCategory" hover-class="press"><view class="category-symbol"><ui-icon name="leaf" size="46" /></view><text>{{item.name}}</text></button></view></scroll-view>
+
+  <view class="brand-footer"><ui-icon name="leaf" size="26" /><text>榴夏来榴莲生鲜 · 专注一份榴莲的美好</text></view>
+</view>

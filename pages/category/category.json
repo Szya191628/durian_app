@@ -1,0 +1,15 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "挑选榴莲",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 160,
+  "usingComponents": {
+    "app-nav": "/components/app-nav/app-nav",
+    "page-state": "/components/page-state/page-state",
+    "search-box": "/components/search-box/search-box",
+    "ui-tabs": "/components/ui-tabs/ui-tabs",
+    "filter-menu": "/components/filter-menu/filter-menu",
+    "product-card": "/components/product-card/product-card",
+    "list-footer": "/components/list-footer/list-footer"
+  }
+}

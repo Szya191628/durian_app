@@ -1,0 +1,1 @@
+.stepper { display:inline-flex; align-items:center; border:2rpx solid var(--color-border); border-radius:12rpx; overflow:hidden; } .step { display:flex; justify-content:center; align-items:center; width:72rpx; height:72rpx; font-size:32rpx; background:var(--color-bg); } .quantity { min-width:64rpx; text-align:center; font-family:var(--font-number); font-size:28rpx; }

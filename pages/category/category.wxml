@@ -1,0 +1,6 @@
+<app-nav title="挑选榴莲" /><view class="screen"><view class="heading">总有一款，合你心意。</view><text class="caption">从品种到规格，慢慢选，认真吃。</text><view class="section"><search-box value="{{searchDraft}}" bindinput="searchInput" bindsearch="search" /></view><ui-tabs items="{{categories}}" value="{{category}}" bindchange="changeCategory" /><view class="row between section"><text class="caption">{{loading || error ? '正在查找商品' : '共 ' + total + ' 款商品'}}</text><filter-menu options="{{categories}}" value="{{category}}" bindchange="changeCategory" /></view>
+
+<page-state loading="{{loading}}" error="{{error}}" empty="{{!items.length}}" title="还没有找到心仪的榴莲" description="试试其他品种，或稍后再来看看。" bindretry="retry" />
+<view wx:if="{{!loading && !error}}" class="grid"><product-card wx:for="{{items}}" wx:key="_id" product="{{item}}" bindopen="openProduct" bindadd="addProduct" /></view>
+<list-footer wx:if="{{!loading && !error}}" loading="{{loadingMore}}" error="{{moreError}}" has-more="{{hasMore}}" count="{{items.length}}" bindretry="onReachBottom" />
+</view>

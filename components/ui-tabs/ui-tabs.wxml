@@ -1,0 +1,1 @@
+<scroll-view scroll-x class="tabs" show-scrollbar="{{false}}"><view class="tabs-inner"><button wx:for="{{items}}" wx:key="key" class="tab {{value === item.key ? 'active' : ''}}" data-key="{{item.key}}" bindtap="change" hover-class="press" aria-label="{{item.label}}" aria-selected="{{value === item.key}}">{{item.label}}<view class="tab-line"></view></button></view></scroll-view>

@@ -1,0 +1,1 @@
+Component({ options: { styleIsolation: "apply-shared", multipleSlots: true }, properties: { name: { type: String, value: 'leaf' }, size: { type: Number, value: 40 }, tone: { type: String, value: 'green' } } })

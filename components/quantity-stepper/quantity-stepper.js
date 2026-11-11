@@ -1,0 +1,1 @@
+Component({ options: { styleIsolation: "apply-shared", multipleSlots: true }, properties: { value: { type: Number, value: 1 }, max: { type: Number, value: 999 }, disabled: Boolean }, methods: { change(e) { const value=this.data.value+Number(e.currentTarget.dataset.delta); if(!this.data.disabled && value>=1 && value<=this.data.max) this.triggerEvent('change',{value}) } } })

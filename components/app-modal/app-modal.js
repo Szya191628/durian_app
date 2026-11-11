@@ -1,0 +1,1 @@
+Component({ options: { styleIsolation: "apply-shared", multipleSlots: true }, properties: { show: Boolean, title: String, confirmText: { type: String, value: '确认' }, busy: Boolean }, methods: { noop() {}, cancel() { if(!this.data.busy) this.triggerEvent('cancel') }, confirm() { if(!this.data.busy) this.triggerEvent('confirm') } } })
